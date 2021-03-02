@@ -27,7 +27,7 @@ if (port == null || port == "") {
 }
 app.listen(port);
 
-//app.listen(8000, "127.0.0.1", function() {
-    //membersBL.getMembersFromWSToDB()
-    //moviesBL.getMoviesFromWSToDB()
-//  });
+/*app.listen(8000, "127.0.0.1", function() {
+    membersBL.getMembersFromWSToDB()
+    moviesBL.getMoviesFromWSToDB()
+  });*/
