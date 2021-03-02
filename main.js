@@ -21,7 +21,11 @@ app.use('/api/movies', moviesRouter);
 app.use('/api/members', membersRouter);
 app.use('/api/subscriptions', subscriptionsRouter);
 
-app.listen(8000);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 
 //app.listen(8000, "127.0.0.1", function() {
     //membersBL.getMembersFromWSToDB()
